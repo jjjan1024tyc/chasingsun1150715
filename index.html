@@ -61,7 +61,8 @@
             width: 100%; 
             aspect-ratio: 1 / 0.65; 
             position: relative; 
-            background: linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 80%, #8B4513 80%, #A0522D 100%);
+            /* 天空 85%，地板 15% */
+            background: linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 85%, #8B4513 85%, #A0522D 100%);
             border-radius: 10px;
             margin-bottom: 10px;
             overflow: hidden; 
@@ -86,7 +87,8 @@
         /* 夸父容器 */
         .kuafu-wrap {
             position: absolute;
-            bottom: 14%; 
+            /* 地板佔15%，一半為7.5%，讓夸父的腳踩在地板中間 */
+            bottom: 7.5%; 
             left: 50%;
             transform: translateX(-50%);
             width: 35%; 
